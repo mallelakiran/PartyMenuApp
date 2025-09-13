@@ -4,7 +4,7 @@ function OrderSuccess({ onComplete }) {
   useEffect(() => {
     const timer = setTimeout(() => {
       onComplete();
-    }, 5000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, [onComplete]);
